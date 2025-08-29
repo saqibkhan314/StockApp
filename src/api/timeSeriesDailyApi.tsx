@@ -1,7 +1,8 @@
+import { BASE_URL } from "../environment/apiConfig";
 const API_KEY = "V02TV606ZJLMR5XG";
-const BASE_URL = "https://www.alphavantage.co/query";
+// const BASE_URL = "https://www.alphavantage.co/query";
 
-// ✅ Fetch Daily Time Series Data for the chart
+
 export const fetchTimeSeriesDaily = async (symbol: any) => {
   try {
     const response = await fetch(
@@ -14,7 +15,7 @@ export const fetchTimeSeriesDaily = async (symbol: any) => {
 
     const data = await response.json();
 
-    console.log("Fetched Time Series Data:", data); // ✅ log for debugging
+    console.log("Fetched Time Series Data:", data); 
 
     if (!data || Object.keys(data).length === 0 || !data["Time Series (Daily)"]) {
       console.log("no data is received");

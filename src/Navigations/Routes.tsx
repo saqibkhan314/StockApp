@@ -24,10 +24,10 @@ const Routes = () => {
       <Stack.Screen name="TopLosersViewAll" component={TopLosersViewAllScreen} />
       <Stack.Screen name="CompanyDetails" component={CompanyDetailsScreen} />
       <Stack.Screen 
-  name="WatchlistDetail" 
-  component={WatchlistDetailScreen} 
-  options={{ title: 'Watchlist Details' }}
-/>
+        name="WatchlistDetail" 
+        component={WatchlistDetailScreen} 
+        options={{ title: 'Watchlist Details' }}
+      />
     </Stack.Navigator>
    </NavigationContainer>
   )

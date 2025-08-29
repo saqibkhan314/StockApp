@@ -95,3 +95,82 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+
+
+# Stocks App - React Native
+
+A modern, responsive mobile application for a stocks/ETFs broking platform, built with React Native. This app demonstrates key features of a financial investing platform, including market data visualization, a personalized watchlist, and portfolio tracking.
+
+# Video Solution
+
+
+[WATCH VIDEO SOLUTION](./src/assets/videosolution.mp4)
+
+# Google Drive App Link
+
+```
+https://drive.google.com/file/d/1GvRykrE818nLkA_TwQGu9dqFosWsSk-i/view?usp=drivesdk
+```
+
+
+# 🛠 Tech Stack & Libraries
+
+- Framework: React Native (CLI)
+
+- Navigation: React Navigation (Stack & Tab Navigators)
+
+- State Management: React Context API 
+
+- HTTP Client: fetch
+
+- Charting: 
+
+  ```
+   npm i react-native-gifted-chart
+  ```
+
+- Icons: 
+
+  ```
+   npm i react-native-vector-icons/Ionicons
+  ```
+
+- Persistent Storage: 
+  ```
+   npm i @react-native-async-storage/async-storage
+  ```
+
+- TypeScript: Used for type safety and better developer experience
+
+# 🚀 Key Features Implemented
+
+- Home Dashboard - Overview of top market movers (Gainers/Losers)
+
+- View All Pages - Paginated lists for exhaustive browsing of Gainers and Losers but they are only few numbers of data are present so pagination is also applied in them also.
+
+- Stock Details Screen - Detailed view for each stock including key statistics, performance metrics, and interactive price charts
+
+- Search Functionality - Real-time search with debouncing to quickly find stocks and ETFs
+
+- Watchlist - Personalized watchlist with add functionality using AsyncStorage for local persistence
+
+
+# 🔌 API Reference
+
+- This app uses the Alpha Vantage API to fetch real-time and historical stock data.
+
+- Alpha Intelligence - Top Gainers and Losers. 
+- Fundamental data - Company Overview 
+- Core Stocks API - Ticker search 
+- TIME_SERIES_DAILY API - To show the chart data of any company
+
+
+ > **Note**:The free API tier is limited  25 requests per day for particular API key
+
+ # 🔮 Future Enhancements
+
+-  Backend Integration: Implement a Node.js backend to handle user authentication, portfolio persistence, and API key management securely.
+
+- Advanced Charts: Integrate interactive charts with more time frames (1W, 1M, 1Y) and technical indicators (RSI, SMA).
+
+- News Integration: Add a section for the latest financial news related to watched stocks.

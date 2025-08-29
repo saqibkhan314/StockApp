@@ -1,6 +1,6 @@
-
+import { BASE_URL } from "../environment/apiConfig";
 const API_KEY = "HPV8DNARN6U7L0ZK";
-const BASE_URL = "https://www.alphavantage.co/query";
+// const BASE_URL = "https://www.alphavantage.co/query";
 
 export const fetchTopMovers = async () => {
   try {
@@ -15,17 +15,17 @@ export const fetchTopMovers = async () => {
 
     const data = await response.json();
 
-    console.log('Fetched data:', data); // ✅ log the fetched data
+    console.log('Fetched data:', data); 
     
 
     if (!data.top_gainers && !data.top_losers) {
-      // API returned but no expected data
+
       throw new Error("No stock data found");
     }
 
-    return data; // ✅ return parsed JSON
+    return data; 
   } catch (error) {
     console.error("Error fetching top movers:", error);
-    throw error; // ✅ let TanStack Query catch and manage it
+    throw error;  
   }
 };

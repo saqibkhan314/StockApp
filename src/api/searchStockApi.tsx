@@ -1,8 +1,8 @@
 
-
+import { BASE_URL } from "../environment/apiConfig";
 export const fetchSearchStocks = async (keywords: string) => {
   const API_KEY = "HJZBI9IOT4OOAL2C"; // your API key
-const BASE_URL = "https://www.alphavantage.co/query";
+// const BASE_URL = "https://www.alphavantage.co/query";
   try {
     const response = await fetch(
       `${BASE_URL}?function=SYMBOL_SEARCH&keywords=${encodeURIComponent(keywords)}&apikey=${API_KEY}`
@@ -14,9 +14,7 @@ const BASE_URL = "https://www.alphavantage.co/query";
 
     const data = await response.json();
 
-    console.log("Fetched Search Results:", data); // ✅ log for debugging
-
-    // Check if we have valid search results
+    console.log("Fetched Search Results:", data); 
     if (!data || !data.bestMatches || data.bestMatches.length === 0) {
       throw new Error("No search results found");
     }

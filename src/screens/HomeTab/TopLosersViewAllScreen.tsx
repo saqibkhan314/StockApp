@@ -16,7 +16,7 @@ export default TopLosersViewAllScreen
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,          // 👈 make the screen fill height
+    flex: 1,          
     backgroundColor: "#fff",
   },
 })
